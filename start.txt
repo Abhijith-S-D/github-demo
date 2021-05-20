@@ -1,2 +1,4 @@
 Test git quick start demo
 bug/fix/0
+
+Changes by bug/fix/1
