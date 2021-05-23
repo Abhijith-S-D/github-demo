@@ -1,6 +1,8 @@
 //this will go back two commits
 git reset --soft HEAD~2
 
+hi
+
 //stash the latest change of commit for later apply
 git stash
 
