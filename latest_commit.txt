@@ -1,0 +1,15 @@
+latest: 
+fix: fixed focus issue in popover and used locale string for aria-label, resolved checkbox selection issue in stratergy page and applied suggested changes
+
+fix(BDH-10364): fix the focus issue of button after pressing ESC and Cancel on the dialog box that appears after clicking on item list
+
+fix(BDH-10288):Styles added to focused element inside popover and index issue handled by adding EventListner for popover
+
+fix(BDH-10288):Bug in rotation logic of dropdown is fixed
+
+fix(BDH-10251,BDH-10228,BDH-10288,BDH-10364): implementation of switch is modified as required and aria-label added to the button, fixed bug-(BDH-10251)
+
+fix(BDH-10364,BDH-10228,BDH-10288):review comments are fixed
+
+fix(BDH-10364,BDH-10228,BDH-10288):bugs fixed
+

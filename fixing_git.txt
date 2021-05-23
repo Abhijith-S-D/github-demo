@@ -1,0 +1,81 @@
+//this will go back two commits
+git reset --soft HEAD~2
+
+//stash the latest change of commit for later apply
+git stash
+
+//this will go back one commit
+git reset --soft HEAD~1
+
+//stash the latest change of commit for later apply
+git stash
+
+//this will go back one commit
+git reset --soft HEAD~1
+
+//stash the latest change of commit for later apply
+git stash
+
+//this will go back one commit
+git reset --soft HEAD~1
+
+//stash the latest change of commit for later apply
+git stash
+
+//this will go back one commit
+git reset --soft HEAD~1
+
+//stash the latest change of commit for later apply
+git stash
+
+//this will go back one commit
+git reset --soft HEAD~1
+
+//stash the latest change of commit for later apply
+git stash
+
+// reset to first comit
+git reset --hard 1903c6e77621beded6d2a89300e27dfd92ba863f
+
+// now do a force push here which will revert your remote branch to first commit.
+git push -f origin an/bug/accessibility
+
+//add latest changes from master
+git pull origin master
+
+// apply the second commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix(BDH-10364,BDH-10228,BDH-10288):review comments are fixed"
+
+// apply the third commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix(BDH-10251,BDH-10228,BDH-10288,BDH-10364): implementation of switch is modified as required and aria-label added to the button, fixed bug-(BDH-10251)"
+
+
+// apply the forth commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix(BDH-10288):Bug in rotation logic of dropdown is fixed"
+
+// apply the fifth commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix(BDH-10288):Styles added to focused element inside popover and index issue handled by adding EventListner for popover"
+
+// apply the sixth commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix(BDH-10364): fix the focus issue of button after pressing ESC and Cancel on the dialog box that appears after clicking on item list"
+
+// apply the seventh commit changes and commit
+git stash apply stash@{0}
+git add -A
+git commit -m "fix: fixed focus issue in popover and used locale string for aria-label, resolved checkbox selection issue in stratergy page and applied suggested changes"
+
+// now your local branch is perfect we will force push
+git push origin an/bug/accessibility
+
+
+
